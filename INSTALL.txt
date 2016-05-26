@@ -1,0 +1,25 @@
+Dconvert安装与部署
+1）下载安装OpenOffice
+下载地址：http://www.openoffice.org/download/
+	安装过程：（略）
+2）下载安装Tomcat
+下载地址：http://ftp.cerc.cnic.cn/incoming/to-pub/%bb%f9%b4%a1%bb%b7%be%b3%c9%fd%bc%b6/
+安装过程：（略）
+3）	下载安装MongoDB
+下载地址：http://www.mongodb.org/dr/downloads.mongodb.org/win32/mongodb-win32-i386-2.0.4.zip/download
+安装教程：
+a)	下载后解压到自己指定的文件夹，如：D:/MongoDB
+b)	将D:/MongoDB/bin加入到环境变量中
+c)	安装MongoDB服务。在D:/MongoDB目录下建立data文件夹存放数据。然后注册MongoDB服务，具体操作为在D:/MongoDB/bin执行如下命令：
+D:\MongoDB\bin>mongod --logpath D:\MongoDB \logs\mongodb.log –logappend  --dbpath G:\mongodb165\data  --directoryperdb  --serviceName mongodb  --install
+4）	部署Dconvert
+从SVN中将dconvert检出，地址为：http://svn.cerc.cnic.cn/svn/duckling/trunk/dconvert
+在Eclipse中将其打包成dconvert.war （右键单击项目Export，选择Web->WAR file），然后放到Tomcat的webapps目录下，启动Tomcat即可。
+
+
+注意：若dconvert不能正常工作，先检查clb4a1这个项目的部署是否更新，因为其中涉及到了访问dconvert；另外如果是无法访问OpenOffice服务，则执行下述命令：
+
+cd C:\Program Files\OpenOffice\OpenOffice.org 3\program
+soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard
+
+其他情况下不能正常使用dconvert则可能是检出时配置不对等原因

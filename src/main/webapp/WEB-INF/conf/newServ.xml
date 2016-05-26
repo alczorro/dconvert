@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceConfig>
+	<validator>cn.vlabs.rest.examples.NullValidator</validator>
+	<!-- API包的类型，请每个应用自行改变 -->
+	<type>dconvert</type>
+	<!-- API包的版本，请每个应用自行改变 -->
+	<version>1.0</version>
+	<entires>
+		<!-- Start of new Service -->
+		<!-- 文档转换服务 -->
+		<Service>
+			<servicename>document.dconvert</servicename>
+			<clazz>cn.vlabs.dconvert.frameservice.ConvertDocHandler</clazz>
+			<validAppAuth>false</validAppAuth>
+		</Service>
+		<Service>
+			<servicename>document.error</servicename>
+			<clazz>cn.vlabs.dconvert.frameservice.CheckIsConvertErrorHandler</clazz>
+			<validAppAuth>false</validAppAuth>
+		</Service>
+		<Service>
+			<servicename>document.waiting</servicename>
+			<clazz>cn.vlabs.dconvert.frameservice.CheckIsWaitingHandler</clazz>
+			<validAppAuth>false</validAppAuth>
+		</Service>
+	</entires>
+</ServiceConfig>

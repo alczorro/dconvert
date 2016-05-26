@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/addDocument.do" location="240,885" dimension="286,84" />
+  <StrutsActivity path="/getDocument.do" location="945,630" dimension="286,84" />
+  <StrutsActivity path="/updateDocument.do" location="510,1155" dimension="304,84" />
+  <StrutsActivity path="/searchResult.do" location="765,225" dimension="238,88" />
+  <StrutsActivity path="/initRights.do" location="1550,250" dimension="221,88" />
+  <StrutsActivity path="/admin.do" location="600,465" dimension="204,88" />
+  <StrutsActivity path="/signOn.do" location="1250,550" dimension="209,88" />
+  <StrutsActivity path="/logOut.do" location="1550,650" dimension="210,88" />
+  <StrutsActivity path="/listFile.do" location="945,720" dimension="284,88" />
+  <StrutsActivity path="/createFile.do" location="1550,850" dimension="287,88" />
+  <StrutsActivity path="/rmFile.do" location="945,825" dimension="269,88" />
+  <StrutsActivity path="/mvFile.do" location="1550,1050" dimension="268,88" />
+  <StrutsActivity path="/renameFile.do" location="945,930" dimension="293,88" />
+  <StrutsActivity path="/listpriv.do" location="1545,1155" dimension="320,88" />
+  <StrutsActivity path="/updatepriv.do" location="50,1350" dimension="339,88" />
+  <StrutsActivity path="/shareuser.do" location="885,375" dimension="352,84" />
+  <StrutsActivity path="/mkDir.do" location="945,1035" dimension="301,76" />
+  <StrutsActivity path="/mvDir.do" location="945,1125" dimension="301,81" />
+  <StrutsActivity path="/rmDir.do" location="945,1215" dimension="301,76" />
+  <StrutsActivity path="/renameDir.do" location="945,1305" dimension="316,76" />
+  <StrutsActivity path="/getUserRoot.do" location="-94,1" dimension="150,100" />
+  <StrutsActivity path="/fCreateDocument.do" location="1550,1350" dimension="388,84" />
+  <StrutsActivity path="/fUpdateDocument.do" location="50,1550" dimension="388,84" />
+  <StrutsActivity path="/fDeleteDocument.do" location="650,1650" dimension="388,84" />
+  <StrutsActivity path="/search.do" location="1250,1650" dimension="256,84" />
+  <StrutsActivity path="/tagAct.do" location="50,1750" dimension="304,84" />
+  <StrutsActivity path="/listGroupTree.do" location="650,1850" dimension="298,84" />
+  <StrutsActivity path="/portletAuth.do" location="50,750" dimension="286,84" />
+  <StrutsActivity path="/getCachedDocument.do" location="1550,450" dimension="317,104" />
+  <StrutsActivity path="MsgPage;6" location="1050,285" dimension="101,75" />
+  <StrutsActivity path="WelcomePage;6" location="950,550" dimension="118,72" />
+  <StrutsActivity path="/addDocument.jsp" location="-75,900" dimension="150,100" />
+  <StrutsActivity path="/upload.jsp" location="198,1160" dimension="150,100" />
+  <StrutsActivity path="/index_web.jsp" location="705,1080" dimension="206,56" />
+  <StrutsActivity path="/admin.jsp" location="645,615" dimension="79,49" />
+  <StrutsActivity path="/form/top.jsp" location="1395,840" dimension="93,49" />
+  <StrutsActivity path="/portletwelcome.jsp" location="650,850" dimension="154,48" />
+  <StrutsActivity path="/portlet.jsp" location="650,750" dimension="112,48" />
+  <StrutsActivity path="/Failure.jsp" location="1020,105" dimension="150,100" />
+  <StrutsActivity path="/index.jsp" location="1250,450" dimension="100,48" />
+  <StrutsActivity path="/main.jsp" location="650,950" dimension="94,48" />
+  <StrutsTransition id="MsgPage;6,null,/Failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1100,285" />
+      <AbsolutePoint location="1100,205" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/portletAuth.do,welcome,/portletwelcome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="336,823" />
+      <AbsolutePoint location="727,823" />
+      <AbsolutePoint location="727,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin.jsp,null,/admin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="684,615" />
+      <AbsolutePoint location="684,553" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index_web.jsp,null,/searchResult.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="819,1080" />
+      <AbsolutePoint location="819,313" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDocument.jsp,null,/addDocument.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="75,950" />
+      <AbsolutePoint location="240,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/top.jsp,null,/logOut.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1441,840" />
+      <AbsolutePoint location="1441,694" />
+      <AbsolutePoint location="1550,694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/upload.jsp,null,/updateDocument.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="348,1210" />
+      <AbsolutePoint location="510,1210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/portlet.jsp,null,/portletAuth.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,774" />
+      <AbsolutePoint location="336,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="WelcomePage;6,null,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1005,550" />
+      <AbsolutePoint location="1005,476" />
+      <AbsolutePoint location="1250,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
