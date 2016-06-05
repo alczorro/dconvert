@@ -264,7 +264,7 @@
 	    <configuration>
 	      <classifier>api</classifier>
 	      <includes>
-		<include>cn/vlabs/dconvert/api/*</include>
+		<include>cn/vlabs/dconvert/api/**</include>
 	      </includes>
 	    </configuration>
 	  </execution>
